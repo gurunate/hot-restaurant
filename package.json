@@ -1,0 +1,31 @@
+{
+  "name": "hot-restaurant",
+  "version": "1.0.0",
+  "description": "A race against the clock",
+  "main": "index.js",
+  "scripts": {
+    "start": "node server",
+    "dev": "./node_modules/.bin/nodemon server"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/gurunate/hot-restaurant.git"
+  },
+  "keywords": [],
+  "author": "Nate Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gurunate/hot-restaurant/issues"
+  },
+  "homepage": "https://github.com/gurunate/hot-restaurant#readme",
+  "dependencies": {
+    "body-parser": "^1.17.1",
+    "express": "^4.15.2",
+    "lodash": "^4.17.4",
+    "rc": "^1.2.1"
+  },
+  "devDependencies": {
+    "eslint": "^3.19.0",
+    "nodemon": "^1.11.0"
+  }
+}

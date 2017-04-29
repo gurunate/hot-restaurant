@@ -1,0 +1,11 @@
+[development]
+title = Hot Restaurant [dev]
+port = 3000
+
+[test]
+title = Hot Restaurant [test]
+port = 3000
+
+[production]
+title = Hot Restaurant
+port = 3000
