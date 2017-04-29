@@ -36,12 +36,12 @@ app.get('/api/:filter', (req, res) => {
     switch (req.params.filter) {
         case 'tables':
 
-            retval = _.take(tables, 5);
+            retval = _.take(tables, config[env].tableLimit);
             break;
 
         case 'waitlist':
 
-            retval = _.slice(tables, 5);
+            retval = _.slice(tables, config[env].tableLimit);
             break;
     }
 
@@ -50,7 +50,7 @@ app.get('/api/:filter', (req, res) => {
 
 app.post('/api/tables', (req, res) => {
     tables.push(req.body);
-    res.json(true);
+    res.json(tables.length <= config[env].tableLimit);
 });
 
 app.delete('/api/tables', (req, res) => {

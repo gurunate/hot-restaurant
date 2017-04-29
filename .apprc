@@ -1,11 +1,14 @@
 [development]
 title = Hot Restaurant [dev]
 port = 3000
+tableLimit = 5
 
 [test]
 title = Hot Restaurant [test]
 port = 3000
+tableLimit = 5
 
 [production]
 title = Hot Restaurant
 port = 3000
+tableLimit = 5
